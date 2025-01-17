@@ -11,7 +11,6 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/proxy-image", async (req, res) => {
-  console.log(req.body);
   const imageUrl = req.query.url;
 
   if (!imageUrl) {
